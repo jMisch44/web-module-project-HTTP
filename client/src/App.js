@@ -35,28 +35,32 @@ const App = (props) => {
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand" ><img width="40px" alt="" src="./Lambda-Logo-Red.png"/> HTTP / CRUD Module Project</span>
+        <span className="navbar-brand">
+          <img width="40px" alt="" src="./Lambda-Logo-Red.png" /> HTTP / CRUD
+          Module Project
+        </span>
       </nav>
 
       <div className="container">
-        <MovieHeader/>
+        <MovieHeader />
         <div className="row ">
-          <FavoriteMovieList favoriteMovies={favoriteMovies}/>
-        
+          <FavoriteMovieList favoriteMovies={favoriteMovies} />
+
           <Switch>
             <Route path="/movies/edit/:id">
+              <EditMovieForm setMovies={setMovies} />
             </Route>
 
             <Route path="/movies/:id">
-              <Movie/>
+              <Movie />
             </Route>
 
             <Route path="/movies">
-              <MovieList movies={movies}/>
+              <MovieList movies={movies} />
             </Route>
 
             <Route path="/">
-              <Redirect to="/movies"/>
+              <Redirect to="/movies" />
             </Route>
           </Switch>
         </div>
