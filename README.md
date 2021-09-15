@@ -16,7 +16,7 @@ CRUD applications are the foundation of most web applications. Being able to man
 
 ## Instructions
 ### Task 1: Project Set Up
-* [ ] Create a forked copy of this project.
+* [x] Create a forked copy of this project.
 * [ ] Clone your OWN version of the repository in your terminal
 * [ ] cd into the project base directory `cd web-module-project-HTTP`
 * [ ] Download server dependencies by running `npm install`
