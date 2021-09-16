@@ -29,6 +29,7 @@ const App = (props) => {
 
   const deleteMovie = (id) => {
     setMovies(movies.filter((movie) => movie.id !== id));
+    setFavoriteMovies(favoriteMovies.filter((movie) => movie.id !== id));
   };
 
   const addToFavorites = (movie) => {
@@ -40,7 +41,6 @@ const App = (props) => {
     } else {
       return;
     }
-
   };
 
   return (
