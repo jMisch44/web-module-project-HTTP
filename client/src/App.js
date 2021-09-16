@@ -68,7 +68,7 @@ const App = (props) => {
               />
             </Route>
 
-            <Route path="/movies">
+            <Route exact path="/movies">
               <MovieList movies={movies} />
             </Route>
 
